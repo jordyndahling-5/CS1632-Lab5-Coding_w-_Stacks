@@ -1,6 +1,5 @@
 package cs1632;
 
-
 public class NumToken extends Token {
     protected NumToken() { super(""); }
     protected int value;

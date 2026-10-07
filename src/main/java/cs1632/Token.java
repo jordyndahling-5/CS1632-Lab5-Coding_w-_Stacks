@@ -1,6 +1,5 @@
 package cs1632;
 
-
 public class Token {
     private String tokenString;
     private Token() { tokenString = ""; }
