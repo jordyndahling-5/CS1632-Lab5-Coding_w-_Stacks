@@ -1,5 +1,6 @@
 package cs1632;
 
+
 public class OpToken extends Token {
     protected int operator;
     protected int precedence;
