@@ -1,3 +1,5 @@
+package cs1632;
+
 import cs1632.NumToken;
 import cs1632.OpToken;
 import cs1632.Token;
@@ -15,9 +17,6 @@ public class Calculator {
         index = 0;
         double result = calcNext();
 
-        if (index != tokens.size()) {
-            throw new IllegalArgumentException("extra tokens");
-        }
         return result;
     }
     private double calcNext() {

@@ -29,6 +29,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Calculator calc = new Calculator();
         try {
             Tokenizer myScanner = new Tokenizer(System.in);
             ArrayList<Token> tokenSequence;
@@ -38,11 +39,12 @@ public class Main {
                 tokenSequence = getNextSequence(myScanner);
                 if (tokenSequence != null) {
                     // Replace the code starting here with code to evaluate the expression
-                    System.out.print("Read equation: ");
+                    System.out.print("Calculate equation: ");
                     for (Token tok : tokenSequence) {
                         System.out.print(tok.getTokenString() + " ");
                     }
-                    System.out.println();
+                    double result = calc.calcPrefix(tokenSequence);
+                    System.out.println("Result: " + result);
                     // End where to replace
                 }
             } while (tokenSequence != null);
