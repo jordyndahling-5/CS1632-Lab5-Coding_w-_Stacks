@@ -45,7 +45,7 @@ public class Calculator {
                 case '*':
                     return operand1 * operand2;
                 case '/':
-                    if (operand2 ==0) {
+                    if (operand2 == 0) {
                         throw new ArithmeticException("division by zero");
                     }
                     return operand1 / operand2;
